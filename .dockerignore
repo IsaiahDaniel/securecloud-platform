@@ -1,0 +1,65 @@
+# Version control
+.git/
+.gitignore
+
+# CI
+.github/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation (README.md is required by pyproject.toml)
+*.md
+!README.md
+docs/
+
+# Docker metadata
+Dockerfile*
+compose.yaml
+compose.*.yaml
+docker-compose*.yml
+docker-compose*.yaml
+.dockerignore
+
+# Secrets
+.env
+.env.*
+**/.npmrc
+*.pem
+*.key
+
+# Node
+node_modules/
+apps/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tests and platform files the image does not run
+tests/
+security/
+infrastructure/
+kubernetes/
+
+# Terraform local state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# OS
+.DS_Store
+Thumbs.db

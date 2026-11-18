@@ -1,0 +1,25 @@
+[project]
+name = "securecloud-platform"
+version = "0.1.0"
+description = "Secure cloud platform: API service, Python security checks, and infrastructure."
+readme = "README.md"
+authors = [
+    { name = "Isaiah Daniel", email = "isaiahdaniel203@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+securecloud-platform = "securecloud_platform:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

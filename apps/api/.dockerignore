@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Version control and CI
+.git/
+.gitignore
+.github/
+
+# Secrets and credentials (never include in build context)
+.env
+.env.*
+**/.npmrc
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Documentation, tests, and local state
+*.md
+test/
+*.spec.ts
+*.log
+.pgdata/
+Dockerfile*
+.dockerignore
